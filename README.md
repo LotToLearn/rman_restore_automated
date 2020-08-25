@@ -43,6 +43,7 @@
   - [1STEP1_rman_pre.sh](#1STEP1_rman_presh)
   - [2STEP2_src_rman.sh](#2STEP2_src_rmansh)
   - [3STEP3_trgt_restore.sh](#3STEP3_trgt_restoresh)
+* [Roadmap](#Roadmap)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -368,22 +369,11 @@ This is the final step, which resets the logs inside a SQL script. If this isnâ€
 
 <!-- ROADMAP -->
 ## Roadmap
-
 See the [open issues](https://github.com/lottolearn/rman_restore_automated/issues) for a list of proposed features (and known issues).
 
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
+### Current WIP
+* Backup and restore from OCI object storage
+* Automatic data guard
 
 
 <!-- LICENSE -->
