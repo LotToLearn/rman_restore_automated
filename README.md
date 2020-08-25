@@ -34,7 +34,7 @@
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
-*[Platform](#Platform)
+* [platform](#platform)
 * [Getting Started](#getting-started)
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
