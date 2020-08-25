@@ -8,6 +8,7 @@
 -->
 
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/noahhorner/)
+[![Issues][issues-shield]][issues-url]
 
 
 
@@ -181,7 +182,7 @@ The token system is heavily utilized on the target side, because if you run into
 
 ### Varibles check, and log, important, and backup directories
 #### Variables check
-Self-explanatory, this just checks at the start of each script as I said above. Once again, without this nothing will run. Make sure it's correctly filled out, refer to above under * [Where to find variables](#Where-to-find-variables)
+Self-explanatory, this just checks at the start of each script as I said above. Once again, without this nothing will run. Make sure it's correctly filled out, refer to above under [Where to find variables](#Where-to-find-variables)
 
 ## 1STEP1_rman_pre.sh
 <img src="images/rman_1_overall.png">
