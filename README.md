@@ -379,7 +379,7 @@ See the [open issues](https://github.com/lottolearn/rman_restore_automated/issue
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the GNU GENERAL PUBLIC LICENSE. See `LICENSE` for more information.
 
 
 
