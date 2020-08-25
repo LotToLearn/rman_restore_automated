@@ -91,6 +91,9 @@ unzip RMAN_SCRIPTS.zip -d /tmp/fake/nfs
 ```sh
 ls -ltra /to/see/hidden/folders
 ```
+<img src="images/all_scripts.png" alt="Logo">
+
+5. All done!
 
 
 
@@ -98,7 +101,7 @@ ls -ltra /to/see/hidden/folders
 <!-- USAGE EXAMPLES -->
 ## Quick Run
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+First, you need to edit the variables.txt and fill out your information. You can refer to 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
