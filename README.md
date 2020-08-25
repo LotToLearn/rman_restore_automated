@@ -141,7 +141,7 @@ First, you need to edit the variables.txt and fill out your information. You can
 ```
 <img src="images/variables_txt.png">
 
-Now, it's pretty basic... you just run scripts in this order.
+### Now, it's pretty basic... you just run scripts in this order.
 
 1 First script (don't run in nohup)
 ```sh
