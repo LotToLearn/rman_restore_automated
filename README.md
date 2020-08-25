@@ -8,7 +8,7 @@
 -->
 
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/noahhorner/)
-[![Issues][issues-shield]][issues-url]
+[![Issues][issues-shield]][https://github.com/LotToLearn/rman_restore_automated/issues]
 
 
 
