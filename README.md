@@ -38,7 +38,7 @@
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Quick Run](#quick-run)
-* [Understanding](#In-depth-Understanding)
+* [What Each Script Does](#What-Each-Script-Does)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -164,7 +164,7 @@ unzip RMAN_SCRIPTS.zip -d /tmp/fake/nfs
 ```sh
 npm install npm@latest -g
 ```
-## In-depth Understanding
+## What Each Script Does
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
