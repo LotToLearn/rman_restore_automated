@@ -66,6 +66,8 @@ There are four main scripts that the user runs, and the other ~40 are on the bac
 ## Platform
 * [Red Hat Enterprise Linux Server release 7.8 (Maipo)](https://access.redhat.com/)
 
+_To learn more about RMAN, refer to Oracle's [Documentation](https://docs.oracle.com/cd/E11882_01/backup.112/e10642/rcmquick.htm#BRADV89346)_
+
 
 <!-- GETTING STARTED -->
 # Getting Started
@@ -360,11 +362,7 @@ This will run the final step of RMAN restoring to new host, which is recover. It
 This is the final step, which resets the logs inside a SQL script. If this isn’t ran, the database cannot be opened and the PDBs will not be in read write, if this step fails then you have big issues unfortunately. It can manually be diagnosed because you just need to run **alter database open resetlogs;**
 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
-```sh
-npm install npm@latest -g
-```
 
 
 <!-- ROADMAP -->
