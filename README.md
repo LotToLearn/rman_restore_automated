@@ -46,7 +46,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+# About The Project
 
 <img src="images/intro_show_1.png" alt="Logo">
 
@@ -55,25 +55,26 @@ Hi, this is a collection of bash scripts designed to automate a rman and restore
 There are four main scripts that the user runs, and the other ~40 are on the backend.
 
 
-
-### Built With
+## Built With
 
 * [BASH](https://tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
 
-### Platform
+## Platform
 * [Red Hat Enterprise Linux Server release 7.8 (Maipo)](https://access.redhat.com/)
 
-<!-- GETTING STARTED -->
-## Getting Started
 
-### Prerequisites
+<!-- GETTING STARTED -->
+# Getting Started
+
+
+## Prerequisites
 
 You're going to need **two seperate database servers, and a shared NFS.**
 
 I used **Oracle Cloud Infrastructure** to provision mine, so I would suggest using OCI.
 
 
-### Installation
+## Installation
 
 1. Download the ZIP from GitHub.
 
@@ -96,7 +97,7 @@ ls -ltra /to/see/hidden/folders
 
 
 <!-- USAGE EXAMPLES -->
-## Quick Run
+# Quick Run
 
 First, you need to edit the variables.txt and fill out your information. You can refer to How_To_Get_Variables.txt.
 ```sh
@@ -151,21 +152,19 @@ Now, it's pretty basic... you just run scripts in this order.
 nohup ./2STEP2_src_rman.sh &
 hit enter again
 tail -200f nohup.out
+mv nohup.out nohup.out.backup
 ```
 
 3 Third script (RESTORE AND RECOVERY RUN IN NOHUP)
 ```sh
-mkdir -p -m 777 /tmp/fake/nfs
-unzip RMAN_SCRIPTS.zip -d /tmp/fake/nfs
+nohup ./3STEP3_trgt_restore.sh &
+hit enter again
+tail -200f nohup.out
+mv nohup.out nohup.out.restorereco
 ```
 
-
-
-```sh
-npm install npm@latest -g
-```
-## What Each Script Does
-
+# What Each Script Does
+## 1STEP1_rman_pre.sh
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
