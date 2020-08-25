@@ -8,7 +8,6 @@
 -->
 
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/noahhorner/)
-[![Issues][issues-shield]][https://github.com/LotToLearn/rman_restore_automated/issues]
 
 
 
@@ -181,8 +180,19 @@ The token system in the first 2 scripts for source don’t utilize it too much, 
 The token system is heavily utilized on the target side, because if you run into any issues, you’re going to have a bad time. The target shell database can always easily be dropped, but don’t include backups because it will clear the NFS. We’ll dive into this later, don’t worry if it sounds confusing now.
 
 ### Varibles check, and log, important, and backup directories
+
 #### Variables check
 Self-explanatory, this just checks at the start of each script as I said above. Once again, without this nothing will run. Make sure it's correctly filled out, refer to above under [Where to find variables](#Where-to-find-variables)
+
+#### LOG Directory
+This is where all logs will go, including the three major logs that get added each time you run a script. For the LOG directory, when you run ./CLEANUP.sh it will always take a backup of the LOG directory, so you can use it to reference. It may be spammy if you’re just running the first script only during testing, so may be wise to delete some.
+
+#### IMPORTANT Directory
+This is where, wait for it, all important files will go. This includes thing like channels we’ll be allocating for RMAN, the init.ora file we’ll use for restore… wallet files, password file, etc… without this restore will fail, miserably. It should always get created, once again if it doesn’t it will be a permission issue. Permissions are the biggest hinderance in determining if the scripts will work, or fail.
+
+#### BACKUP Directory
+This is where all the backup files from source will get added, as well as the control file backup. Restore will read from this directory, there shouldn’t be any issues, unless once again there’s permission issues. These should automatically get chmod 777 permission once script 2 finishes.
+
 
 ## 1STEP1_rman_pre.sh
 <img src="images/rman_1_overall.png">
