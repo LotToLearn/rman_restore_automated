@@ -210,6 +210,7 @@ This cleans up everything, and takes a backup of the logs directory.
 
 ## 1STEP1_rman_pre.sh
 [Top](#Table-of-Contents)
+
 <img src="images/rman_1_overall.png">
 
 ### ../.dontremove/src/src_db_up.sh
@@ -250,6 +251,7 @@ As you can see, this can be a fast script to run which is why there’s minimal 
 
 ## 2STEP2_src_rman.sh
 [Top](#Table-of-Contents)
+
 <img src="images/rman_2_overall.png">
 
 ### Tokens
@@ -284,6 +286,7 @@ This runs SQL scripts to grab some variables for grabbed_variables.txt. Grabs th
 
 ## 3STEP3_trgt_restore.sh
 [Top](#Table-of-Contents)
+
 <img src="images/rman_3_overall.png">
 
 ### Tokens
