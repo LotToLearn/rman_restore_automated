@@ -379,29 +379,19 @@ See the [open issues](https://github.com/lottolearn/rman_restore_automated/issue
 <!-- LICENSE -->
 ## License
 
-Distributed under the GNU GENERAL PUBLIC LICENSE. See `LICENSE` for more information.
+Distributed under the Mozilla Public License Version 2.0. See `LICENSE` for more information.
+
+I spent a lot of time on this, at least leave the copyright at the top :)
 
 
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
 Project Link: [https://github.com/lottolearn/rman_restore_automated](https://github.com/lottolearn/rman_restore_automated)
 
+The best way to contact me is to send a message on LinkedIn, or to post an issue on GitHub.
 
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
-
+As always, I utilized the README template from https://github.com/othneildrew/Best-README-Template -- check it out!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
