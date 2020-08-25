@@ -6,12 +6,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/noahhorner/)
 
 
 
@@ -25,16 +21,12 @@
   <h3 align="center">Automated RMAN backup and restore to new host</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    A collection of 45 scripts to automate a rman backup and restore migration between two hosts.
     <br />
     <a href="https://github.com/lottolearn/rman_restore_automated"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/lottolearn/rman_restore_automated">View Demo</a>
-    ·
-    <a href="https://github.com/lottolearn/rman_restore_automated/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/lottolearn/rman_restore_automated/issues">Request Feature</a>
   </p>
 </p>
 
@@ -44,13 +36,12 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+* [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
+* [Prerequisites](#prerequisites)
+* [Installation](#installation)
+* [Quick Run](#quick-run)
+* [Understanding](#In-depth-Understanding)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -62,18 +53,16 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`lottolearn`, `rman_restore_automated`, `twitter_handle`, `email`
+Hi, this is a collection of bash scripts designed to automate a rman and restore migration between two hosts on NFS. It's been thoroughly tested as working on 12.1. The general idea is that you have a **varibales text file that you must fill out**, and then the script sources that for the information.
+
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [BASH](https://tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
 
-
+### Platform
+* [Red Hat Enterprise Linux Server release 7.8 (Maipo)](https://access.redhat.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -82,7 +71,8 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+You're going to need **two seperate database servers, and a shared NFS.**
+I used **Oracle Cloud Infrastructure** to provision mine, so I would suggest using OCI.
 * npm
 ```sh
 npm install npm@latest -g
@@ -102,12 +92,24 @@ npm install
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Quick Run
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
+```sh
+npm install npm@latest -g
+```
+## In-depth Understanding
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+_For more examples, please refer to the [Documentation](https://example.com)_
+
+```sh
+npm install npm@latest -g
+```
 
 
 <!-- ROADMAP -->
