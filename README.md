@@ -51,9 +51,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="images/intro_show_1.png" alt="Logo">
 
 Hi, this is a collection of bash scripts designed to automate a rman and restore migration between two hosts on NFS. It's been thoroughly tested as working on 12.1. The general idea is that you have a **varibales text file that you must fill out**, and then the script sources that for the information.
+
+There are four main scripts that the user runs, and the other ~40 are on the backend.
 
 
 
