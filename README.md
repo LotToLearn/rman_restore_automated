@@ -100,6 +100,8 @@ ls -ltra /to/see/hidden/folders
 # Quick Run
 
 First, you need to edit the variables.txt and fill out your information. You can refer to How_To_Get_Variables.txt.
+
+### Where to find variables
 ```sh
 # GETTING VARIABLES -:
 # SOURCE WALLET LOCATION
@@ -165,8 +167,26 @@ mv nohup.out nohup.out.restorereco
 ```
 
 # What Each Script Does
+## All scripts have a token system
+All of my scripts have a token system, which is why you should chmod -R 777 the whole folder you extract, that way there will be no write permission errors. Every script at the start adds a token, and removes as check. If it can't write, the scripts will not run as an error handler.
+
+Each script also verifies you have the variables.txt file, because without it nothing will run. It creates a variables.txt from the template, just in case you somehow delete the file? I also use three main directories for the script process. LOGS_DIR, IMPORTANT_DIR, and BKP_DIR. Each of the three main scripts gets an overall log file you can review, and some components have separate log files (e.g. the BACKUP, RESTORE, RECO, etc...)
+
+### What's the purpose of the token system?
+Mainly error handling, I don't want you running the second script obviously, before the first -- because there will be no pre req steps done, and you won't get the important files you need for the backup, like allocating rman channels so the backup sets are named in an easily readable format.
+
+The token system in the first 2 scripts for source don’t utilize it too much, the main token being you can’t run script 2 before 1. The reason for this is because I didn’t want to dive too deep into the token system, since the first script runs really quick, so if there’s any issues you can easily just restart. 
+
+The token system is heavily utilized on the target side, because if you run into any issues, you’re going to have a bad time. The target shell database can always easily be dropped, but don’t include backups because it will clear the NFS. We’ll dive into this later, don’t worry if it sounds confusing now.
+
+### Varibles check, and log, important, and backup directories
+#### Variables check
+Self-explanatory, this just checks at the start of each script as I said above. Once again, without this nothing will run. Make sure it's correctly filled out, refer to above under * [Where to find variables](#Where-to-find-variables)
+
 ## 1STEP1_rman_pre.sh
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+<img src="images/rman_1_overall.png">
+
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
