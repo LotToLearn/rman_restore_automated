@@ -28,13 +28,11 @@
 </p>
 
 
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
-* [Platform](#platform)
 * [Getting Started](#getting-started)
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
@@ -64,9 +62,8 @@ There are four main scripts that the user runs, and the other ~40 are on the bac
 ## Built With
 
 * [BASH](https://tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
-
-## Platform
 * [Red Hat Enterprise Linux Server release 7.8 (Maipo)](https://access.redhat.com/)
+* Oracle Database 12c EE High Perf Release 12.2.0.1.0 - 64bit Production
 
 _To learn more about RMAN, refer to Oracle's [Documentation](https://docs.oracle.com/cd/E11882_01/backup.112/e10642/rcmquick.htm#BRADV89346)_
 
@@ -369,6 +366,8 @@ This is the final step, which resets the logs inside a SQL script. If this isnâ€
 
 <!-- ROADMAP -->
 ## Roadmap
+[Top](#Table-of-Contents)
+
 See the [open issues](https://github.com/lottolearn/rman_restore_automated/issues) for a list of proposed features (and known issues).
 
 ### Current WIP
@@ -378,6 +377,7 @@ See the [open issues](https://github.com/lottolearn/rman_restore_automated/issue
 
 <!-- LICENSE -->
 ## License
+[Top](#Table-of-Contents)
 
 Distributed under the Mozilla Public License Version 2.0. See `LICENSE` for more information.
 
@@ -387,6 +387,8 @@ I spent a lot of time on this, at least leave the copyright at the top :)
 
 <!-- CONTACT -->
 ## Contact
+[Top](#Table-of-Contents)
+
 Project Link: [https://github.com/lottolearn/rman_restore_automated](https://github.com/lottolearn/rman_restore_automated)
 
 The best way to contact me is to send a message on LinkedIn, or to post an issue on GitHub.
