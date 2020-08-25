@@ -69,27 +69,29 @@ There are four main scripts that the user runs, and the other ~40 are on the bac
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
 ### Prerequisites
 
 You're going to need **two seperate database servers, and a shared NFS.**
+
 I used **Oracle Cloud Infrastructure** to provision mine, so I would suggest using OCI.
-* npm
-```sh
-npm install npm@latest -g
-```
+
 
 ### Installation
 
-1. Clone the repo
+1. Download the ZIP from GitHub.
+
+2. SFTP the files to your server's NAS.
+
+3. Extract the files on your server.
 ```sh
-git clone https://github.com/lottolearn/rman_restore_automated.git
+mkdir -p -m 777 /tmp/fake/nfs
+unzip RMAN_SCRIPTS.zip -d /tmp/fake/nfs
 ```
-2. Install NPM packages
+4. Verify all files are there, and the hidden .dontremove folder.
 ```sh
-npm install
+ls -ltra /to/see/hidden/folders
 ```
+
 
 
 
