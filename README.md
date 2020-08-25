@@ -50,6 +50,7 @@
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
+[Top](#Table-of-Contents)
 
 <img src="images/intro_show_1.png" alt="Logo">
 
