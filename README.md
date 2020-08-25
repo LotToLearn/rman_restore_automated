@@ -69,7 +69,7 @@ There are four main scripts that the user runs, and the other ~40 are on the bac
 
 <!-- GETTING STARTED -->
 # Getting Started
-
+[Top](#Table-of-Contents)
 
 ## Prerequisites
 
@@ -102,6 +102,7 @@ ls -ltra /to/see/hidden/folders
 
 <!-- USAGE EXAMPLES -->
 # Quick Run
+[Top](#Table-of-Contents)
 
 First, you need to edit the variables.txt and fill out your information. You can refer to How_To_Get_Variables.txt.
 
@@ -171,6 +172,8 @@ mv nohup.out nohup.out.restorereco
 ```
 
 # What Each Script Does
+[Top](#Table-of-Contents)
+
 ## All scripts have a token system
 All of my scripts have a token system, which is why you should chmod -R 777 the whole folder you extract, that way there will be no write permission errors. Every script at the start adds a token, and removes as check. If it can't write, the scripts will not run as an error handler.
 
@@ -197,10 +200,16 @@ This is where, wait for it, all important files will go. This includes thing lik
 #### BACKUP Directory
 This is where all the backup files from source will get added, as well as the control file backup. Restore will read from this directory, there shouldn’t be any issues, unless once again there’s permission issues. These should automatically get chmod 777 permission once script 2 finishes.
 
+#### CLEANUP.sh script
+This cleans up everything, and takes a backup of the logs directory. 
+
+#### EXAMPLE DIRECTORIES (WITH A CLEANUP RAN, AND SCRIPT 1 RAN AGAIN)
+<img src="images/dir_example.png">
 
 
 
 ## 1STEP1_rman_pre.sh
+[Top](#Table-of-Contents)
 <img src="images/rman_1_overall.png">
 
 ### ../.dontremove/src/src_db_up.sh
@@ -240,6 +249,8 @@ As you can see, this can be a fast script to run which is why there’s minimal 
 
 
 ## 2STEP2_src_rman.sh
+[Top](#Table-of-Contents)
+<img src="images/rman_2_overall.png">
 
 ### Tokens
 Only token it takes is **.rman_pre.token** to verify script 1 was ran.
@@ -272,6 +283,9 @@ This runs SQL scripts to grab some variables for grabbed_variables.txt. Grabs th
 
 
 ## 3STEP3_trgt_restore.sh
+[Top](#Table-of-Contents)
+<img src="images/rman_3_overall.png">
+
 ### Tokens
 This is the script that utilizes A LOT more tokens, each script has a failsafe.
 ```sh
@@ -341,7 +355,6 @@ This will run the final step of RMAN restoring to new host, which is recover. It
 
 ### ../.dontremove/trgt/trgt_open_resetlogs.sh
 This is the final step, which resets the logs inside a SQL script. If this isn’t ran, the database cannot be opened and the PDBs will not be in read write, if this step fails then you have big issues unfortunately. It can manually be diagnosed because you just need to run **alter database open resetlogs;**
-
 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
