@@ -23,7 +23,7 @@
   <p align="center">
     A collection of 45 scripts to automate a rman backup and restore migration between two hosts.
     <br />
-    <a href="https://github.com/lottolearn/rman_restore_automated">View Demo</a>
+    <a href="https://www.youtube.com/watch?v=YqvT_EVnN7s&feature=youtu.be">View Demo</a>
   </p>
 </p>
 
